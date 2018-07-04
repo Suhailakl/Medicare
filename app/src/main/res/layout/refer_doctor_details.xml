@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ref_doc_layout"
+    android:weightSum="1"
+    android:paddingLeft="-15dp">
+
+    <TextView
+        android:id="@+id/ref_doc_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView13"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView13"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:text="Dr.Name"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/ref_doc_dpt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView12"
+        android:layout_alignStart="@+id/textView12"
+        android:layout_below="@+id/textView12"
+        android:text="Department"
+        android:textSize="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/ref_doc_hspname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView14"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="25dp"
+        android:text="Works At"
+        android:textSize="20dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ref_doc_ads"
+            android:layout_weight="0.05"
+            android:lines="2"
+            android:text="@string/hsptalads"
+            android:textSize="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="25dp"/>
+
+        <TextView
+            android:id="@+id/ref_doc_ads"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_weight="0.03"
+            android:background="@drawable/adrs_border"
+            android:lines="6"
+            android:maxLines="8"
+            android:textSize="20dp"
+            android:layout_alignParentTop="true" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/ref_doc_ads"
+            android:layout_alignStart="@+id/ref_doc_ads"
+            android:layout_below="@+id/ref_doc_ads"
+            android:layout_marginTop="20dp"
+            android:background="@android:drawable/stat_sys_phone_call_forward" />
+
+        <TextView
+            android:id="@+id/ref_doc_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="136dp"
+            android:layout_toRightOf="@+id/imageView3"
+            android:layout_alignBottom="@+id/imageView3"
+            android:text="Phone"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView18"
+            android:layout_below="@+id/imageView3"
+            android:layout_marginTop="20dp"
+            android:lines="2"
+            android:text="@string/days"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/ref_doc_days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView15"
+            android:layout_marginLeft="-32dp"
+            android:layout_toEndOf="@+id/textView15"
+            android:layout_toRightOf="@+id/textView15"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView15"
+            android:layout_alignStart="@+id/textView15"
+            android:layout_below="@+id/textView15"
+            android:layout_marginTop="18dp"
+            android:text="@string/time"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/ref_doc_time"
+            android:layout_width="200dp"
+            android:layout_alignBottom="@+id/textView17"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/textView17"
+            android:layout_toEndOf="@+id/textView17"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="2dp"
+            android:text="Time" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <SurfaceView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#d6e8f5"
+                android:textSize="20dp"
+                android:layout_alignParentBottom="true" />
+            <ProgressBar
+                android:id="@+id/ref_doc_progress"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="25dp" />
+            <Button
+                android:id="@+id/ref_doc_ref"
+                android:background="@drawable/button_shape"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:shadowColor="#a31ba8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:textSize="16dp"
+                android:shadowRadius="5"
+                android:textColor="#2BFFF1"
+                android:text="@string/ref"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

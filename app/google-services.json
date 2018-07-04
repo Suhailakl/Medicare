@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "132837896993",
+    "firebase_url": "https://consultdoctor-25306.firebaseio.com",
+    "project_id": "consultdoctor-25306",
+    "storage_bucket": "consultdoctor-25306.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:132837896993:android:cc9b188735bddbe8",
+        "android_client_info": {
+          "package_name": "com.jrs.medicare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "132837896993-l8po0i52953vagvhvrs33fr1djvlf5v7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jrs.medicare",
+            "certificate_hash": "6f93b29776a25906520b997e90f751e5a4458b8e"
+          }
+        },
+        {
+          "client_id": "132837896993-6av1bicndr1t8qq21vpmihj0ca71k7fv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAf8Yh6cocFKFpc6_spBqBvAj2sE8gw70Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "132837896993-h3mom6fcnfovk3dihvv0o1us1korvt54.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.jrs.medicare"
+              }
+            },
+            {
+              "client_id": "132837896993-6av1bicndr1t8qq21vpmihj0ca71k7fv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

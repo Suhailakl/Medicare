@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="notification"
+        android:id="@+id/icon_doc_notification"
+        android:orderInCategory="20"
+        android:icon="@mipmap/ic_notification_icon"
+        app:actionLayout="@layout/action_bar_notification_icon"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_myAcount"
+        android:orderInCategory="100"
+        android:title="@string/Myacnt"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_doc_logout"
+        android:orderInCategory="100"
+        android:title="@string/logout"
+        app:showAsAction="never" />
+</menu>

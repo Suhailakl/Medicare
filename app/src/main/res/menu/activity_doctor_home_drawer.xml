@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_doc_token"
+            android:title="@string/home" />
+        <item
+            android:title="@string/bkdPtnts"
+            android:id="@+id/doc_bkPt">
+        </item>
+        <item
+            android:id="@+id/nav_doc_testReslt"
+            android:title="@string/tstReslt" />
+        <item
+            android:id="@+id/nav_doc_record"
+            android:title="@string/record" />
+        <item
+            android:id="@+id/nav_doc_rfrl"
+            android:title="@string/rfrl">
+
+        </item>
+    </group>
+</menu>

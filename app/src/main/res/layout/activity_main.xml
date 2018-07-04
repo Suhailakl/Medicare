@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.jrs.medicare.MainActivity">
+
+    <Button
+        android:text="@string/sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignRight="@+id/doc_reg"
+        android:layout_alignEnd="@+id/doc_reg" />
+
+    <Button
+        android:text="@string/user"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_reg"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/doc_reg"
+        android:layout_alignStart="@+id/doc_reg"
+        android:layout_marginTop="46dp" />
+
+    <TextView
+        android:text="@string/or"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:id="@+id/OR"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/user_reg"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="@string/Doc"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/doc_reg"
+        android:layout_below="@+id/OR"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp" />
+
+    <TextView
+        android:text="@string/alry_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_below="@+id/doc_reg"
+        android:layout_toLeftOf="@+id/button3"
+        android:layout_toStartOf="@+id/button3"
+        android:layout_marginTop="43dp" />
+
+    <TextView
+        android:text="@string/reg_as"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_marginTop="69dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

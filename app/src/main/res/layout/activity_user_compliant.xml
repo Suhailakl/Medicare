@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_complaint"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.jrs.medicare.Complaint"
+    android:weightSum="1">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/user_compliant_doc_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:hint="@string/slctDoc"
+        android:layout_gravity="left">
+
+        <EditText
+            android:id="@+id/user_compliant_doc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </android.support.design.widget.TextInputLayout>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <Spinner
+        android:id="@+id/user_compliant_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_alignBottom="@+id/textView1234"
+        android:layout_marginTop="0dp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textView1234"
+        android:layout_toRightOf="@+id/user_compliant_spinner"
+      android:layout_width="200dp"
+      android:layout_height="wrap_content"
+      android:hint="@string/issue"
+      android:layout_gravity="center">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_compliant_issue"
+        />
+  </android.support.design.widget.TextInputLayout>
+</RelativeLayout>
+
+    <EditText
+        android:id="@+id/user_compliant"
+        android:layout_width="326dp"
+        android:layout_height="201dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/adrs_border"
+        android:ems="10"
+        android:gravity="start"
+        android:hint="@string/elaborate"
+        android:inputType="textCapSentences|textMultiLine"
+        android:maxLength="1000"
+        android:maxLines="50"
+        android:minLines="4"
+        android:textAlignment="textStart"
+        android:layout_weight="0.33" />
+
+    <Button
+        android:id="@+id/user_compliant_ok"
+        android:background="@drawable/button_shape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:text="Ok" />
+</LinearLayout>

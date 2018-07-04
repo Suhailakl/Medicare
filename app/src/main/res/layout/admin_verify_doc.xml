@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/book_doc"
+    android:weightSum="1">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/ad_vrfy_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView13"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView13"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="26dp"
+        android:text="Dr.Name"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/ad_vrfy_dpt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView12"
+        android:layout_alignStart="@+id/textView12"
+        android:layout_below="@+id/textView12"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Department"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/ad_vrfy_edu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/eduqua"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/ad_vrfy_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/city"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/ad_vrfy_reg_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/reg"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/ad_vrfy_hspname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:text="Works At"
+        android:textSize="20dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="27dp"
+            android:layout_weight="0.05"
+            android:lines="2"
+            android:text="@string/hsptalads"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/ad_vrfy_ads"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.03"
+            android:background="@drawable/adrs_border"
+            android:lines="4"
+            android:maxLines="4"
+            android:text="address"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/ad_vrfy_ads"
+            android:layout_alignStart="@+id/ad_vrfy_ads"
+            android:layout_below="@+id/ad_vrfy_ads"
+            android:layout_marginTop="20dp"
+            android:background="@android:drawable/stat_sys_phone_call_forward" />
+
+        <TextView
+            android:id="@+id/ad_vrfy_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="136dp"
+            android:layout_toRightOf="@+id/imageView3"
+            android:text="Phone"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView18"
+            android:layout_below="@+id/imageView3"
+            android:layout_marginTop="20dp"
+            android:lines="2"
+            android:text="@string/days"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/ad_vrfy_days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView15"
+            android:layout_marginLeft="-32dp"
+            android:layout_toEndOf="@+id/textView15"
+            android:layout_toRightOf="@+id/textView15"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView15"
+            android:layout_alignStart="@+id/textView15"
+            android:layout_below="@+id/textView15"
+            android:layout_marginTop="18dp"
+            android:text="@string/time"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tad_vrfy_time"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="78dp"
+            android:layout_marginTop="253dp"
+            android:text="Time" />
+    </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-50dp">
+        <SurfaceView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="#d6e8f5" />
+
+        <Button
+            android:id="@+id/ad_vrfy_accept"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="66dp"
+            android:layout_marginStart="66dp"
+            android:background="@drawable/button_shape"
+            android:text="@string/accept"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/ad_vrfy_reject"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="240dp"
+            android:layout_marginStart="240dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_shape"
+            android:text="@string/reject"
+            android:textColor="@color/red" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/doc_bkPt_frame"
+        android:foreground="@drawable/shape_window_dim"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/doc_bkPt_l1">
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginStart="130dp"
+                android:textSize="20dp"
+                />
+
+            <Spinner
+                android:id="@+id/doc_bkPt_spinner"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_alignBottom="@+id/textView19"
+                android:layout_toRightOf="@+id/textView19"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="50dp">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:id="@+id/doc_bkPt_recycler"/>
+        </RelativeLayout>
+    </FrameLayout>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/doc_bkPt_pro"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/noBook"
+        android:layout_centerInParent="true"
+        android:textSize="25dp"
+        android:id="@+id/doc_bkPt_noBook"
+        />
+</RelativeLayout>

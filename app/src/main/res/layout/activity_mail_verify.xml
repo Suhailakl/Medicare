@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mail_verify"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jrs.medicare.MailVerify">
+
+    <TextView
+        android:text="@string/vrymail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textSize="20dp"
+        android:layout_marginTop="210dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/gmailbox"
+        android:id="@+id/imageView2"
+        android:layout_marginBottom="50dp"
+        android:layout_above="@+id/img_btn_verfy"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="-10dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_dialog_email"
+        android:layout_marginTop="26dp"
+        android:id="@+id/img_btn_verfy"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/bluere"
+        android:id="@+id/imageView"
+        android:layout_alignBottom="@+id/img_btn_verfy"
+        android:layout_toLeftOf="@+id/img_btn_verfy"
+        android:layout_toStartOf="@+id/img_btn_verfy"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="-7dp"/>
+
+</RelativeLayout>

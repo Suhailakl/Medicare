@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:paddingTop="20dp">
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:text="@string/refTo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/ref_doc_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        android:layout_marginTop="78dp"
+        android:layout_below="@+id/textView41"
+        android:layout_alignRight="@+id/textView41"
+        android:layout_alignEnd="@+id/textView41"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="18dp" />
+
+    <Button
+        android:id="@+id/ref_doc_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ref_doc_ok"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="45dp"
+        android:layout_toEndOf="@+id/ref_doc_ok"
+        android:layout_toRightOf="@+id/ref_doc_ok"
+        android:text="@string/view" />
+
+    <TextView
+        android:id="@+id/ref_doc_h_name"
+        android:textSize="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignBaseline="@+id/textView41"
+        android:layout_alignBottom="@+id/textView41"
+        android:layout_toRightOf="@+id/textView41"
+        android:layout_toEndOf="@+id/textView41"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp" />
+
+    <TextView
+        android:id="@+id/ref_doc_h_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="@string/city"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/ref_doc_h_name"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/textView41"
+        android:layout_alignStart="@+id/textView41" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/colon"
+        android:textSize="25dp"
+        android:layout_alignBaseline="@+id/ref_doc_h_city"
+        android:layout_alignBottom="@+id/ref_doc_h_city"
+        android:layout_toRightOf="@+id/ref_doc_h_city"
+        android:layout_toEndOf="@+id/ref_doc_h_city"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp" />
+
+    <TextView
+        android:id="@+id/ref_doc_h_cityo"
+        android:textSize="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_alignBaseline="@+id/textView45"
+        android:layout_alignBottom="@+id/textView45"
+        android:layout_toRightOf="@+id/textView45"
+        android:layout_toEndOf="@+id/textView45" />
+
+    <ProgressBar
+        android:id="@+id/ref_doc_h_progress"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ref_doc_h_cityo"
+        android:layout_toEndOf="@+id/textView41"
+        android:layout_toRightOf="@+id/textView41"
+        android:indeterminate="true"
+        android:indeterminateTintMode="src_atop"
+        android:indeterminateTint="@color/colorPrimary"/>
+</RelativeLayout>

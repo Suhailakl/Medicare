@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_bookDtls"
+            android:title="@string/bookDtls" />
+        <item
+            android:id="@+id/nav_prscptn"
+            android:title="@string/prscptn" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_tstRslt"
+                android:title="@string/tstRslt" />
+            <item
+                android:id="@+id/nav_cmplnt"
+                android:title="@string/cmplnt" />
+            </group>
+        </menu>
+    </item>
+
+</menu>
